@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ENVIRONS Streetwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Al navegar por este sitio <strong>aceptás el uso de cookies</strong> para agilizar tu experiencia de compra.</p>
+            <button id="accept-cookies" class="cookie-accept">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>ENVIRONS</h1></a>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="products.html" class="nav-link">Productos</a>
+                            <div class="dropdown-content">
+                                <a href="products.html">Ver todos los productos</a>
+                                <a href="products.html?category=remeras">Remeras</a>
+                                <a href="products.html?category=buzos">Buzos</a>
+                                <a href="products.html?category=pantalones">Pantalones</a>
+                                <a href="products.html?category=accesorios">Accesorios</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="login.html" class="auth-link">Iniciar sesión</a>
+                    <a href="register.html" class="auth-link">Crear cuenta</a>
+                    <div class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="products.html" class="mobile-nav-link">Productos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contacto</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Iniciar sesión</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Crear cuenta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1 class="page-title">CONTACTO</h1>
+            <p class="page-subtitle">Estamos aquí para ayudarte con cualquier consulta</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Hablemos</h2>
+                    <p>¿Tenés alguna pregunta sobre nuestros productos, envíos o querés saber más sobre ENVIRONS? No dudes en contactarnos.</p>
+                    <p>Nuestro equipo está disponible para ayudarte y responder todas tus consultas sobre nuestra colección de streetwear.</p>
+                    
+                    <div class="contact-details">
+                        <h3>Información de Contacto</h3>
+                        <p><strong>Email:</strong> info@environs.com</p>
+                        <p><strong>WhatsApp:</strong> +54 11 1234-5678</p>
+                        <p><strong>Horarios de atención:</strong></p>
+                        <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        <p>Sábados: 10:00 - 16:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <h3>Redes Sociales</h3>
+                        <p>Seguinos en nuestras redes para estar al día con las últimas novedades:</p>
+                        <p><strong>Instagram:</strong> @environs.streetwear</p>
+                        <p><strong>TikTok:</strong> @environs.stw</p>
+                        <p><strong>Facebook:</strong> ENVIRONS Streetwear</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <h3>Envíos y Devoluciones</h3>
+                        <p>Realizamos envíos a todo el país</p>
+                        <p>Envío gratis en compras superiores a $150.000</p>
+                        <p>Aceptamos cambios y devoluciones dentro de los 30 días</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Envianos tu consulta</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="producto">Consulta sobre productos</option>
+                                <option value="envio">Consulta sobre envíos</option>
+                                <option value="devolucion">Cambios y devoluciones</option>
+                                <option value="tallas">Guía de talles</option>
+                                <option value="colaboracion">Colaboraciones</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" required placeholder="Contanos tu consulta en detalle..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quiero recibir novedades y ofertas exclusivas por email
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cómo puedo conocer mi talle?</h3>
+                    <p>Tenemos una guía de talles detallada en cada producto. También podés contactarnos para asesoramiento personalizado.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cuánto demora el envío?</h3>
+                    <p>Los envíos dentro de CABA demoran 24-48hs. Al interior del país entre 3-7 días hábiles según la zona.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Puedo cambiar un producto?</h3>
+                    <p>Sí, aceptamos cambios dentro de los 30 días de la compra. El producto debe estar en perfectas condiciones.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Qué medios de pago aceptan?</h3>
+                    <p>Aceptamos tarjetas de crédito, débito, transferencia bancaria y efectivo en algunos puntos de retiro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Envíos</h3>
+                    <p>Hacemos envíos a todo el país.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Pagos</h3>
+                    <p>Aceptamos pago con tarjeta, transferencia y efectivo</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Hablanos por cualquiera de nuestras redes ante cualquier duda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Cambios y devoluciones</h3>
+                    <p>Hacemos cambios y devoluciones.</p>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Exclusividad ENVIRONS</h3>
+                <p>Suscribite para recibir descuentos, ofertas y early access.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
