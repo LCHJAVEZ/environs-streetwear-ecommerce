@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - ENVIRONS Streetwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Al navegar por este sitio <strong>aceptás el uso de cookies</strong> para agilizar tu experiencia de compra.</p>
+            <button id="accept-cookies" class="cookie-accept">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>ENVIRONS</h1></a>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="products.html" class="nav-link active">Productos</a>
+                            <div class="dropdown-content">
+                                <a href="products.html">Ver todos los productos</a>
+                                <a href="products.html?category=remeras">Remeras</a>
+                                <a href="products.html?category=buzos">Buzos</a>
+                                <a href="products.html?category=pantalones">Pantalones</a>
+                                <a href="products.html?category=accesorios">Accesorios</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="login.html" class="auth-link">Iniciar sesión</a>
+                    <a href="register.html" class="auth-link">Crear cuenta</a>
+                    <div class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="products.html" class="mobile-nav-link">Productos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contacto</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Iniciar sesión</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Crear cuenta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="products-header">
+        <div class="container">
+            <h1 class="page-title">TODOS LOS PRODUCTOS</h1>
+            <p class="page-subtitle">Descubre nuestra colección completa de streetwear</p>
+        </div>
+    </section>
+
+    <!-- Product Categories Filter -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="remeras">Remeras</button>
+                <button class="filter-btn" data-category="buzos">Buzos</button>
+                <button class="filter-btn" data-category="pantalones">Pantalones</button>
+                <button class="filter-btn" data-category="accesorios">Accesorios</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Remeras -->
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">URBAN DARK TEE</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">URBAN DARK TEE</h3>
+                        <p class="product-price">$42.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('URBAN DARK TEE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">STREET BRIGHT</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">STREET BRIGHT</h3>
+                        <p class="product-price">$42.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('STREET BRIGHT')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">NEON GREEN</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">NEON GREEN</h3>
+                        <p class="product-price">$42.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('NEON GREEN')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">SCRIPT TEE</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">SCRIPT TEE</h3>
+                        <p class="product-price">$52.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('SCRIPT TEE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Buzos -->
+                <div class="product-card" data-category="buzos">
+                    <div class="product-image">
+                        <div class="placeholder-image">CLASSIC BLACK HOODIE</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CLASSIC BLACK HOODIE</h3>
+                        <p class="product-price">$84.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('CLASSIC BLACK HOODIE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="buzos">
+                    <div class="product-image">
+                        <div class="placeholder-image">MIDNIGHT BLUE HOODIE</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MIDNIGHT BLUE HOODIE</h3>
+                        <p class="product-price">$84.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('MIDNIGHT BLUE HOODIE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="buzos">
+                    <div class="product-image">
+                        <div class="placeholder-image">FRACTURE CREWNECK</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">FRACTURE CREWNECK</h3>
+                        <p class="product-price">$75.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('FRACTURE CREWNECK')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="buzos">
+                    <div class="product-image">
+                        <div class="placeholder-image">CORE HOODIE</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CORE HOODIE</h3>
+                        <p class="product-price">$75.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('CORE HOODIE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Pantalones -->
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <div class="placeholder-image">DENIM STRIPES BLACK</div>
+                        <div class="product-badge discount">24% OFF</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">DENIM STRIPES BLACK</h3>
+                        <p class="product-price">
+                            <span class="original-price">$105.000,00</span>
+                            $80.000,00
+                        </p>
+                        <button class="add-to-cart-btn" onclick="addToCart('DENIM STRIPES BLACK')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <div class="placeholder-image">DENIM STRIPES BLUE</div>
+                        <div class="product-badge discount">24% OFF</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">DENIM STRIPES BLUE</h3>
+                        <p class="product-price">
+                            <span class="original-price">$105.000,00</span>
+                            $80.000,00
+                        </p>
+                        <button class="add-to-cart-btn" onclick="addToCart('DENIM STRIPES BLUE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <div class="placeholder-image">CARPENTER STRIPES</div>
+                        <div class="product-badge discount">24% OFF</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CARPENTER STRIPES</h3>
+                        <p class="product-price">
+                            <span class="original-price">$105.000,00</span>
+                            $80.000,00
+                        </p>
+                        <button class="add-to-cart-btn" onclick="addToCart('CARPENTER STRIPES')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <div class="placeholder-image">POLAR VEST</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">POLAR VEST</h3>
+                        <p class="product-price">$64.000,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('POLAR VEST')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <div class="placeholder-image">FISHERMAN HAT</div>
+                        <div class="product-badge">Envío gratis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">FISHERMAN HAT</h3>
+                        <p class="product-price">$42.500,00</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('FISHERMAN HAT')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Sale Items -->
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">LIGHTNING TEE</div>
+                        <div class="product-badge discount">42% OFF</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">LIGHTNING TEE</h3>
+                        <p class="product-price">
+                            <span class="original-price">$55.000,00</span>
+                            $32.000,00
+                        </p>
+                        <button class="add-to-cart-btn" onclick="addToCart('LIGHTNING TEE')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="remeras">
+                    <div class="product-image">
+                        <div class="placeholder-image">STARS TEE</div>
+                        <div class="product-badge discount">38% OFF</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">STARS TEE</h3>
+                        <p class="product-price">
+                            <span class="original-price">$34.000,00</span>
+                            $21.000,00
+                        </p>
+                        <button class="add-to-cart-btn" onclick="addToCart('STARS TEE')">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Envíos</h3>
+                    <p>Hacemos envíos a todo el país.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Pagos</h3>
+                    <p>Aceptamos pago con tarjeta, transferencia y efectivo</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Hablanos por cualquiera de nuestras redes ante cualquier duda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Cambios y devoluciones</h3>
+                    <p>Hacemos cambios y devoluciones.</p>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Exclusividad ENVIRONS</h3>
+                <p>Suscribite para recibir descuentos, ofertas y early access.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+</html>
